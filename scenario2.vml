@@ -1,0 +1,14 @@
+Video mavideo :
+	clips :
+		VideoClip clip1a -> " .mp4" [23 to 107]
+		VideoClip clip1b -> "clip1.mp4" [121 to 141]
+		TextClip intro -> "intro" duration=10 bg_color="black" 
+		TextClip outro -> "outro" duration=15 bg_color="black" 
+		
+	pistes :
+		VideoPiste main :
+			intro -> clip1a -> clip1b -> outro
+		SubtitlePiste sub :
+			Subtitle sub_clip1 -> "Sous titre lalalalala" [clip1a+10 for 10]
+			Subtitle sub_clip2 -> "Sous titre papapapapa" [sub_clip1-20 for 10]
+			Subtitle sub_clip3 -> "Sous titre sisisisisi" [clip1b for 15]

@@ -1,0 +1,10 @@
+Video mavideo :
+	clips :
+		VideoClip clip1 -> "monclip.mp4" [10 to 20]
+		VideoClip clip2 -> "monclip.mp4" [40 to 50]
+		TextClip intro -> "DEBUT DE MA SUPER VIDEO" duration=10 bg_color="black" fontsize=20 
+		TextClip outro -> "FIN DE MA SUPER VIDEO" duration=15 bg_color="black" color="red" fontsize=20 
+
+	pistes :
+		VideoPiste main :
+			intro -> clip1 -> clip2 -> outro
